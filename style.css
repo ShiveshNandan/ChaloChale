@@ -1,0 +1,332 @@
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  /* font-size:px; */
+  /* font-family: sans-serif; */
+}
+
+
+/* navigation */
+#navbar {
+  display: flex;
+  position: sticky;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+#navbar::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+.logo img {
+  margin: 5px 10px;
+  height: 46px;
+  width: 41px;
+  border-radius: 10px;
+  /* z-index: 0; */
+}
+#navbar ul li a {
+  text-decoration: none;
+  position: absolute;
+  /* margin: 2vh ; */
+  /* padding: 30px 24px; */
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(179, 108, 245);
+  top: 14px;
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 40%;
+}
+#navbar ul li a:hover {
+  color: aliceblue;
+  /* font-size: 1.6rem; */
+  text-shadow: 3px 4px black;
+  transition: all 0.2s ease-out;
+  transform: scale(1.2);
+}
+
+/* navogation ka kamm */
+/* beech ka KAAM */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  align-items: center;
+  color: #fddfff;
+  text-align: center;
+  text-shadow: 1.5px 1.5px black;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  background: url("New folder/lg.jpg") no-repeat top/cover;
+  height: 450px;
+  width: 100%;
+  opacity: 0.99;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  filter :blur(4px);
+}
+#btn1 {
+  margin: 10px;
+  /* position: absolute; */
+  padding: 4px 12px;
+  position: absolute;
+  top: 350px;
+  border-radius: 7px;
+  border: 2px solid rgb(131, 22, 40);
+  font-size: 0.7rem;
+  background-color: rgb(248 213 213);
+  font-weight: bold;
+  /* z-index: -1; */
+}
+#btn1:hover {
+  background-color: rgb(187, 142, 142);
+  font-size: 0.9rem;
+  color: #fddfff;
+  border: 3px solid blue;
+  font-weight: bolder;
+  /* text-shadow: 1px 1px rgb(62, 62, 158); */
+  box-shadow: 1.5px 1.5px 5px 2px white;
+  transition: all 0.3s ease-out;
+  /* transform: scale(1); */
+  /* transform: scale(1.2); */
+  cursor: pointer;
+}
+
+.wel {
+  margin-top: 0px;
+  padding: 30px 12px;
+  font-size: 3.3rem;
+}
+.wel:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+  text-shadow: 3px 4px black;
+}
+/* beech ka kaam khatam */
+/* boxess ka kaam */
+.box {
+  display: flex;
+  /* box-sizing: border-box; */
+  flex-direction: column;
+  border: 2px solid blue;
+  margin: 33px 5px;
+  padding: 25px 15px;
+  text-align: center;
+  width: 25%;
+  background-color: beige;
+  border-radius: 35px;
+  margin-bottom: 32px;
+  font-size: 0.9rem;
+  font-family: "Bree Serif", serif;
+  
+  /* height: 20rem; */
+}
+.box:hover {
+    background-color: rgb(250, 250, 167);
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    box-shadow: 4px 6px 7px 0px black;
+}
+.boxes::before {
+    content: "";
+    position: absolute;
+    /* background: rgb(175, 133, 133) center center/cover; */
+    /* height: 1011px; */
+    /* height: 217%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -6; */
+}
+
+.boxes {
+    margin-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 99.2%;
+    flex-wrap: wrap;
+    padding: 6px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box img {
+  height: 150px;
+  width: 200px;
+  align-self: center;
+  /* padding: 12px; */
+  border-radius: 22px;
+  margin: 12px;
+}
+#taj {
+  height: 150px;
+  width: 286.61px;
+}
+.heading {
+  display: flex;
+  color: rgb(243, 177, 177);
+  justify-content: center;
+  align-self: center;
+  text-shadow: 2px 2px 3px black;
+  margin-top: 50px;
+  z-index: -30;
+}
+/* .heading:hover {
+  transform: scale(1.2);
+  text-shadow: 4px 4px 3px black;
+  transition: all 0.26s ease-in;
+} */
+/* .boxes::before{
+    content: "";
+    position: absolute;
+    background: url('new folder/bang.jpg');
+    width: 100%;
+    height: 200%;
+    opacity: 0.1;
+    z-index: -5;
+} */
+/* boxes ka kaam khatam */
+/* showcase in ka kaam */
+#showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#showcase img {
+    display: flex;
+    flex-wrap: wrap;
+  height: 100px;
+  overflow: auto;
+  margin:3px 30px;
+}
+#showcase img:hover {
+  transform: scale(1.5);
+  transition: all 0.2s ease-in;
+}
+.hd {
+  display: flex;
+  margin: 30px;
+  font-size: 2.3rem;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  color: #fddfff;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+/* .hd:hover {
+    font-size: 2.2rem; 
+    transform: scale(1.2);
+  text-shadow: 4px 4px 3px black;
+  transition: all 0.26s ease-in;
+  box-sizing: content-box;
+} */
+#shoe::before {
+  content: "";
+  position: absolute;
+  background: url("New folder/coll.jpg") no-repeat center center/cover;
+  height: 220px;
+  width: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  filter :blur(4px);
+}
+/* showcase ka kaam khatam */
+/* form ka kaam */
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-self: center;
+  margin-top: 32px;
+  text-shadow:0.4px 0.399px white;
+}
+.ff {
+  margin: 8px;
+  /* margin-top: 0px; */
+  padding: 2px;
+  width: 30rem;
+  text-align: center;
+}
+.ff:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 6px black;
+    transition: all 0.26s ease-out;
+}
+form::before {
+    content: "";
+    position: absolute;
+    background: url("New folder/humayun.jpg") center center/cover;
+    height: 453px;
+    width: 100%;
+    opacity: 0.777;
+    z-index: -4;
+    filter :blur(4px);
+}
+form h1 {
+    font-size: 2.4rem;
+    margin: 23px;
+    color: rgb(243, 177, 177);
+text-shadow: 2px 2px black;
+
+}
+form h1:hover{
+    transform: scale(1.2);
+    text-shadow: 4px 4px 3px black;
+    transition: all 0.26s ease-out;
+}
+/* form ka kaam khatam */
+/* contact us ka kaam */
+.contact {
+  display: flex;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* margin-left: 440px;     */
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.contact img {
+  height: 50px;
+  margin: 20px 60px;
+}
+#cc h1 {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  color: rgb(243, 177, 177);
+  text-shadow: 2px 2px black;
+}
+.contact img:hover{
+  transform: scale(1.4);
+  /* box-shadow: 4px 4px 3px black; */
+  transition: all 0.26s ease-out;
+}
+#cc::before {
+  content: "";
+  position: absolute;
+  background: url("New folder/taj.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 150px;
+  opacity: 0.8;
+  z-index: -4;
+  filter :blur(4px);
+}
